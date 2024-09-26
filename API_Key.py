@@ -10,7 +10,7 @@ openai.api_key = 'your-openai-api-key'
 # Function to generate GPT-3/4 response using the latest OpenAI API
 def generate_response(prompt):
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Or "gpt-4" if you have access to it (Accoeding to the Task we have to use gpt-3)
+        model="gpt-3.5-turbo",  # Or "gpt-4" if you have access to it (According to the task we have to use gpt-3)
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},  # System message instructing the model
             {"role": "user", "content": prompt}  # The user's prompt
